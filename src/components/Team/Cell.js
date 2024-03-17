@@ -9,7 +9,9 @@ const Cell = ({ data }) => (
         maxHeight: '250px',
         overflow: 'hidden',
         display: 'flex',
-        padding: '10px'} }>
+        padding: '10px',
+      }}
+      >
         <img
           src={data.link}
           alt={data.name}
@@ -26,7 +28,16 @@ const Cell = ({ data }) => (
       <center><h5 style={{ padding: '0px', margin: '0px' }}>{data.education}</h5></center>
       <center>
         <a href={data.linkedin} target="_blank" rel="noreferrer">
-          <img src={data.linkedinImg} style={{ width: '20px', height: '20px', marginRight: '10px', marginTop: '20px' }} alt="LinkedIn" />
+          <img
+            src={data.linkedinImg}
+            style={{
+              width: '20px',
+              height: '20px',
+              marginRight: '10px',
+              marginTop: '20px',
+            }}
+            alt="LinkedIn"
+          />
         </a>
         <a href={data.github} target="_blank" rel="noreferrer">
           <img src={data.githubImg} style={{ width: '20px', height: '20px' }} alt="GitHub" />
