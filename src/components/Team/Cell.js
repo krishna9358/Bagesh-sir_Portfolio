@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Cell = ({ data }) => (
-  <div className="cell-container" style={{ margin: '50px' }}>
+  <div className="cell-container" style={{ margin: '8px' }}>
     <article className="mini-post" style={{ width: 'fit-content' }}>
       <header style={
                       {
