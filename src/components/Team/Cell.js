@@ -27,7 +27,9 @@ const Cell = ({ data }) => (
             }
         />
       </header>
-      <center><h4 style={{ padding: '0px', margin: '0px' }}>{data.name}</h4></center>
+      <center><h3 style={{ padding: '0px', margin: '0px' }}>{data.name}</h3></center>
+      <center><h5 style={{ padding: '0px', margin: '0px' }}>{data.education}</h5></center>
+      
     </article>
   </div>
 );

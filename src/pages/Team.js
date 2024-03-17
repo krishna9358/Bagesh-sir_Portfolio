@@ -9,7 +9,7 @@ import data from '../data/team';
 const Team = () => (
   <Main
     title="Team"
-    description="A glance at the team that work with Prof. Dr. Bagesh Kumar"
+    description="A glance at the team who work with Prof. Dr. Bagesh Kumar"
   >
     <article className="post" id="Team">
       <header>
@@ -22,6 +22,7 @@ const Team = () => (
           <Cell
             data={photo}
             key={photo.cap}
+
           />
         ))}
       </div>
