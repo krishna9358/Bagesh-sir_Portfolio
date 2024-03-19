@@ -5,3 +5,8 @@ In my role as an educator, I strive to cultivate curiosity and critical thinking
 <br />
 <br />
 Join me in navigating the exciting intersection of academia and technology, as we shape the future together.
+
+
+
+
+Krishna krishnaaaaaaaa
