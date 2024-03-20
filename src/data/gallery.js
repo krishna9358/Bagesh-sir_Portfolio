@@ -26,12 +26,12 @@ const data = [
   {
     link: '/images/gallery/11.jpeg',
   },
-  // {
-  //   // link: '/images/gallery/7.jpeg',
-  // },
-  // {
-  //   // link: '/images/gallery/9.jpeg',
-  // },
+  {
+    link: '/images/gallery/7.jpeg',
+  },
+  {
+    link: '/images/gallery/9.jpeg',
+  },
   {
     link: '/images/gallery/12.jpg',
   },
