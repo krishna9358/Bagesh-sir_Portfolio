@@ -8,13 +8,13 @@ import data from '../data/gallery';
 
 const Gallery = () => (
   <Main
-    title="Gallery"
+    title="Events"
     description="A glimpse into the life of Prof. Dr. Bagesh Kumar"
   >
     <article className="post" id="Gallery">
       <header>
         <div className="title">
-          <h2><Link to="/gallery">Gallery</Link></h2>
+          <h2><Link to="/gallery">Events</Link></h2>
         </div>
       </header>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>

@@ -134,7 +134,7 @@ const data = [
 
   },
   {
-    link: '/images/team/as.jpeg',
+    link: '/images/team/as.jpg',
     name: 'Alankar Singh',
     education: 'Student B.Tech',
     linkedin: 'linkedin.com',
@@ -152,7 +152,7 @@ const data = [
 
   },
   {
-    link: '/images/team/lm.jpg',
+    link: '/images/team/va.jpg',
     name: 'Vanshika Andotra',
     education: 'Student B.Tech',
     linkedin: 'https://www.linkedin.com/in/vanshika-singh-andotra-b1215324a',
