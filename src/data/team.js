@@ -71,7 +71,7 @@ const data = [
   },
 
   {
-    link: '/images/team/rg.jpeg',
+    link: '/images/team/rg.jpg',
     name: 'Rishik Gupta',
     education: 'Student B.Tech',
     linkedin: 'https://www.linkedin.com/in/rishikgupta28/',
@@ -89,7 +89,7 @@ const data = [
 
   },
   {
-    link: '/images/team/au.jpeg',
+    link: '/images/team/au.jpg',
     name: 'Abhinav Upadhyay',
     education: 'Student B.Tech',
     linkedin: 'https://www.linkedin.com/in/abhinav-upadhyay-b40a79268/',
@@ -98,7 +98,7 @@ const data = [
 
   },
   {
-    link: '/images/team/od.jpeg',
+    link: '/images/team/om.jpg',
     name: 'Om Dabral',
     education: 'Student B.Tech',
     linkedin: 'https://www.linkedin.com/in/om-dabral-b6a5542b5/',
