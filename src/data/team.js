@@ -18,6 +18,15 @@ const data = [
     github: 'https://www.github.com/krishna9358',
   },
   {
+    link: '/images/team/rg.jpg',
+    name: 'Rishik Gupta',
+    education: 'Student B.Tech',
+    linkedin: 'https://www.linkedin.com/in/rishikgupta28/',
+    linkedinImg: 'https://imgs.search.brave.com/fQPr1e-Xdvt8sGDU2azrU80WfA8mqPqdzDaBsTf19ck/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/Ny5wbmc',
+    githubImg: 'https://imgs.search.brave.com/LUckTVtnBmHLsv6OcyA_UsC-qZchQgYysxns3UjMp1s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvaW9uaWNvbnMt/ZmlsbC12b2wtMi81/MTIvbG9nby1naXRo/dWItMTI4LnBuZw',
+
+  },
+  {
     link: '/images/team/pk.jpeg',
     name: 'Pratiksh Kumar',
     education: 'Student B.Tech',
@@ -70,15 +79,7 @@ const data = [
     githubImg: 'https://imgs.search.brave.com/LUckTVtnBmHLsv6OcyA_UsC-qZchQgYysxns3UjMp1s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvaW9uaWNvbnMt/ZmlsbC12b2wtMi81/MTIvbG9nby1naXRo/dWItMTI4LnBuZw',
   },
 
-  {
-    link: '/images/team/rg.jpg',
-    name: 'Rishik Gupta',
-    education: 'Student B.Tech',
-    linkedin: 'https://www.linkedin.com/in/rishikgupta28/',
-    linkedinImg: 'https://imgs.search.brave.com/fQPr1e-Xdvt8sGDU2azrU80WfA8mqPqdzDaBsTf19ck/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/Ny5wbmc',
-    githubImg: 'https://imgs.search.brave.com/LUckTVtnBmHLsv6OcyA_UsC-qZchQgYysxns3UjMp1s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvaW9uaWNvbnMt/ZmlsbC12b2wtMi81/MTIvbG9nby1naXRo/dWItMTI4LnBuZw',
 
-  },
   {
     link: '/images/team/ps3.jpg',
     name: 'Parth Sharma',
