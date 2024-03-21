@@ -17,7 +17,7 @@ const Gallery = () => (
           <h2><Link to="/gallery">Events</Link></h2>
         </div>
       </header>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '1rem' }}>
         {data.map((photo) => (
           <Cell
             data={photo}
