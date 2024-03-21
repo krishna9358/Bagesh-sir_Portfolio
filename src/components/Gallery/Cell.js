@@ -15,13 +15,10 @@ const Cell = ({ data }) => (
         }
       }
       >
-        <img src={data.link} alt={data.cap} style={{ width: '100%', height: 'auto' }} />
+        <div className="cell" style={{ backgroundImage: `url(${data.link})` }} />
+        {/* <img src={data.link} alt={data.cap} style={{ width: '100%', height: 'auto' }} /> */}
       </header>
       <div className="caption" dangerouslySetInnerHTML={{ __html: data.caption }} />
-      <div className="can">
-        [data.link]
-      </div>
-
     </article>
   </div>
 );
