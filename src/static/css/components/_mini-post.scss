@@ -7,12 +7,15 @@
 /* Mini Post */
 .cell-container {
   position: relative;
+  // remove this 
+  border: 1px solid red;
 
   .description {
-    position: absolute;
+    // position: absolute;/
     padding: 0;
     bottom: 0;
     border-top: solid 1px _palette(border);
+    
 
     p {
       font-size: 0.9rem;
@@ -46,6 +49,9 @@
   background: _palette(bg);
   border: solid 1px _palette(border);
   margin: 0 0 _size(element-margin);
+  display: flex;
+  flex-direction: column;
+
 
   .image {
     overflow: hidden;
@@ -61,6 +67,7 @@
         @include vendor( 'transform', 'scale(1.05)');
       }
     }
+  
   }
 
   header {
@@ -89,6 +96,13 @@
       right: 2em;
       top: 2em;
     }
+  }
+  .caption{
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
   }
 }
 
