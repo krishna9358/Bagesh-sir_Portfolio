@@ -14,7 +14,7 @@ module.exports = {
   parser: '@babel/eslint-parser',
   plugins: ['react'],
   rules: {
-    'linebreak-style': ['error', 'windows'],
+    'linebreak-style': ['error', 'unix'],
     'jsx-a11y/anchor-is-valid': ['error', {
       aspects: ['noHref', 'invalidHref', 'preferButton'],
       components: ['Link'],
