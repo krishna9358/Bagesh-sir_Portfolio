@@ -2,25 +2,26 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Cell = ({ data }) => (
-  <div className="cell-container" style={{ margin: '20px' }}>
+  <div className="cell-container" style={{ margin: '0.78125rem',
+  width:'fit-content' }}>
     <article className="mini-post" style={{ width: 'fit-content' }}>
       <header style={{
-        maxWidth: '250px',
-        maxHeight: '250px',
+        maxWidth: '15.625rem',
+        maxHeight: '15.625rem',
         overflow: 'hidden',
         display: 'flex',
-        padding: '10px',
+        padding: '0.625rem',
       }}
       >
         <img
           src={data.link}
           alt={data.name}
           style={{
-            width: '230px',
-            height: '230px',
+            width: '14.375rem',
+            height: '14.375rem',
             borderRadius: '100%',
-            border: '5px solid grey',
-            padding: '5px',
+            border: '0.3125rem solid grey',
+            padding: '0.3125rem',
           }}
         />
       </header>
@@ -31,16 +32,16 @@ const Cell = ({ data }) => (
           <img
             src={data.linkedinImg}
             style={{
-              width: '20px',
-              height: '20px',
-              marginRight: '10px',
-              marginTop: '20px',
+              width: '1.25rem',
+              height: '1.25rem',
+              marginRight: '0.625rem',
+              marginTop: '1.25rem',
             }}
             alt="LinkedIn"
           />
         </a>
         <a href={data.github} target="_blank" rel="noreferrer">
-          <img src={data.githubImg} style={{ width: '20px', height: '20px' }} alt="GitHub" />
+          <img src={data.githubImg} style={{ width: '1.25rem', height: '1.25rem' }} alt="GitHub" />
         </a>
       </center>
     </article>

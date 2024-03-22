@@ -1,0 +1,15 @@
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(33.33%, 1fr)); /* Three items in one row */
+    grid-row-gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .team-container {
+      grid-template-columns: repeat(1,1fr);
+      grid-gap: 1rem; 
+      align-items: center;
+      justify-items: center;
+    }
+  }
+  
