@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faGoogleScholar, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import ContactIcons from '../Contact/ContactIcons';
