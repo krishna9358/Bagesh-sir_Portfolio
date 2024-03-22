@@ -183,10 +183,31 @@ const data = [
     link: '/images/gallery/45.jpg',
     caption: "Discussing upcoming research project with <strong>Bihar's IT Minister(Santosh Kumar Suman)</strong>, focusing on IT infrastructure development and advancement in the state.",
   },
+  {
+    link: '/images/gallery/46.jpeg',
+    caption: 'Meetup With <strong> IIT Mandi Director </strong> with <strong> Manipal University students</strong> and <strong>IIIT Allahabad students</strong>',
+  },
+  {
+    link: '/images/gallery/47.jpeg',
+    caption: 'Meetup With ohter researcher with <strong> Manipal University students</strong> and <strong>IIIT Allahabad students</strong>',
+  },
+  {
+    link: '/images/gallery/48.jpeg',
+    caption: 'Research paper presentation at <strong> IIT Mandi</strong> with <strong> Manipal University students</strong> and <strong>IIIT Allahabad students</strong>',
+  },
+  {
+    link: '/images/gallery/49.jpeg',
+    caption: 'Research paper presentation at <strong> IIT Roorkee</strong> with <strong> Manipal University students</strong> and <strong>IIIT Allahabad students</strong>',
+  },
+  {
+    link: '/images/gallery/50.jpeg',
+    caption: 'Research paper presentation at <strong> IIT Roorkee</strong> with <strong> Manipal University students</strong> and <strong>IIIT Allahabad students</strong>',
+  },
   // {
   //   link: '/images/gallery/41.jpg',
   //   caption: "Discussing upcoming research project with <strong>Bihar's IT Minister(Santosh Kumar Suman)</strong>, focusing on IT infrastructure development and advancement in the state.",
   // },
+
 ];
 
 export default data;
