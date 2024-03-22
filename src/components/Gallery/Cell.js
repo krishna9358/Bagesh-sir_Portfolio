@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -14,11 +15,10 @@ const Cell = ({ data }) => (
         }
       }
       >
-        <img src={data.link} alt={data.cap} style={{ width: '100%', height: 'auto' }} />
+        <div className="cell" style={{ backgroundImage: `url(${data.link})` }} />
+        {/* <img src={data.link} alt={data.cap} style={{ width: '100%', height: 'auto' }} /> */}
       </header>
-      <div className="caption">
-        {data.caption}
-      </div>
+      <div className="caption" dangerouslySetInnerHTML={{ __html: data.caption }} />
     </article>
   </div>
 );
