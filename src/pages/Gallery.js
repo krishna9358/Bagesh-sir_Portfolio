@@ -5,6 +5,7 @@ import Main from '../layouts/Main';
 import Pagination from '../components/Gallery/Pagination';
 import Cell from '../components/Gallery/Cell';
 import data from '../data/gallery';
+import '../static/css/pages/gallery.scss'
 
 const pageSize = 6;
 
@@ -37,7 +38,7 @@ const Gallery = () => {
             <h2><Link to="/gallery">Events</Link></h2>
           </div>
         </header>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '1rem' }}>
+        <div className='gallery-container'>
           {currentItems.map((photo) => (
             <Cell
               data={photo}
