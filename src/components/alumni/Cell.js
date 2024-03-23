@@ -1,54 +1,49 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Cell = ({ data }) => (
-  <div className="cell-container" style={{ margin: '0.78125rem',
-  width:'fit-content' }}>
-    <article className="mini-post" style={{ width: 'fit-content' }}>
-      <header style={{
-        maxWidth: '15.625rem',
-        maxHeight: '15.625rem',
-        overflow: 'hidden',
-        display: 'flex',
-        padding: '0.625rem',
-      }}
-      >
-        <img
-          src={data.link}
-          alt={data.name}
-          style={{
-            width: '14.375rem',
-            height: '14.375rem',
-            borderRadius: '100%',
-            border: '0.3125rem solid grey',
-            padding: '0.3125rem',
-          }}
-        />
-      </header>
-      <center><h3 style={{ padding: '0px', margin: '0px' }}>{data.name}</h3></center>
-      <center><h5 style={{ padding: '0px', margin: '0px' }}>
-  {data.work || (data.intern && data.intern.length > 0) ? 
-    data.work || data.intern : 
-    data.education}
-</h5></center>
-      <center>
-        <a href={data.linkedin} target="_blank" rel="noreferrer">
+
+const Cell = ({ data }) => {
+  const nameStyle ={
+   padding: 0, margin: 0 ,display:'grid',gridTemplateColumns: '80% 20%',justifyItems:'end'
+  }
+  const { link, name, work, intern, education, linkedin, linkedinImg, github, githubImg } = data;
+
+  const experience = work || (intern && intern.length > 0) ? (work || intern) : education;
+
+  return (
+    <div className="cell-container" style={{ margin: '0.78125rem', width: 'fit-content' }}>
+      <article className="mini-post" style={{ width: 'fit-content' }}>
+        <header style={{ maxWidth: '15.625rem', maxHeight: '15.625rem', overflow: 'hidden', display: 'flex', padding: '0.625rem' }}>
           <img
-            src={data.linkedinImg}
+            src={link}
+            alt={name}
             style={{
-              width: '1.25rem',
-              height: '1.25rem',
-              marginRight: '0.625rem',
-              marginTop: '1.25rem',
+              width: '14.375rem',
+              height: '14.375rem',
+              border: '0.3125rem solid grey',
+              padding: '0.3125rem',
             }}
-            alt="LinkedIn"
           />
-        </a>
+        </header>
+        <h3 style={nameStyle}> 
+       {name}  
+       <a href={linkedin} style={{justifyItems:'start',width:'100%'}} target="_blank" rel="noreferrer">
+            <img
+              src={linkedinImg}
+              style={{ width: '1.25rem', height: '1.25rem',  }}
+              alt="LinkedIn"
+            />
+          </a>
+          </h3>
+        <center><h5 style={{ padding: 0, margin: 0 }}>{experience}</h5></center>
         
-      </center>
-    </article>
-  </div>
-);
+          
+        
+       
+      </article>
+    </div>
+  );
+};
 
 Cell.propTypes = {
   data: PropTypes.shape({
