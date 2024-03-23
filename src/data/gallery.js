@@ -1,5 +1,10 @@
 /* eslint-disable max-len */
 const data = [
+
+  {
+    link:'/images/gallery/52.jpeg',
+    caption:'Meeting of <strong>committee members </strong> and <strong>professor O.P vyas </strong> with <strong>renowned professors </strong> across the globe at <strong>IIIT Allahabad </strong',
+  },
   {
     link: '/images/gallery/1.jpeg',
     caption: 'Research paper presentation at <strong>IIT BHU Varanasi India</strong> with <strong>Manipal University</strong> and <strong>IIIT students Allahabad</strong>',
@@ -31,6 +36,10 @@ const data = [
   {
     link: '/images/gallery/8.jpeg',
     caption: 'Visit to <strong>IIT kanpur</strong> on discussion about <strong>future collaborations and research projects.</strong>',
+  },
+  {
+    link:'/images/gallery/51.jpeg',
+    caption:'Meeting of <strong>committee members </strong> and <strong>professor O.P vyas </strong> with <strong>renowned professors </strong> across the globe at <strong>IIIT Allahabad </strong',
   },
   {
     link: '/images/gallery/11.jpeg',
