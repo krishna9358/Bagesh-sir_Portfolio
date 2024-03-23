@@ -32,6 +32,10 @@ const routes = [
     label: 'Contact',
     path: '/contact',
   },
+  {
+    label: 'ALumni',
+    path: '/alumni',
+  }
 ];
 
 export default routes;

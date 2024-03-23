@@ -114,6 +114,9 @@
     align-items: center;
     margin: 10px;
     justify-content: center;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  
   }
 }
 

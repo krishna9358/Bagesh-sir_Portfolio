@@ -5,9 +5,9 @@ import Main from '../layouts/Main';
 
 import Cell from '../components/Team/Cell';
 import data from '../data/team';
-import '../static/css/pages/team.scss'
-const Team = () => (
-  <Main
+
+const Alumni = () => (
+    <Main
     title="Team"
     description="A glance at the team who work with Prof. Dr. Bagesh Kumar"
   >
@@ -17,17 +17,17 @@ const Team = () => (
           <h2><Link to="/team">Meet the Team</Link></h2>
         </div>
       </header>
-      <div className='team-container'>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {data.map((photo) => (
-          
-          <Cell data={photo} 
+          <Cell
+            data={photo}
             key={photo.cap}
+
           />
-        
         ))}
       </div>
     </article>
   </Main>
 );
 
-export default Team;
+export default Alumni;
