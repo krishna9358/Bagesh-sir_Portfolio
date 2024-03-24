@@ -1,16 +1,33 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 import Pagination from '../components/Gallery/Pagination';
 import Cell from '../components/Gallery/Cell';
-import data from '../data/gallery';
 import '../static/css/pages/gallery.scss'
 
 const pageSize = 6;
 
 const Gallery = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const headers = {
+          'Content-Type': 'application/json',
+        };
+        const response = await axios.get("http://localhost:4000/event", { headers });
+        setData(response.data.data);
+        setCurrentPage(1);
+        
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      }
+    };
+    fetchData();
+  }, []);
+  const [currentPage, setCurrentPage] = useState(0);
 
   // Calculate the total number of pages
   const totalPages = Math.ceil(data.length / pageSize);
@@ -20,6 +37,7 @@ const Gallery = () => {
     const startIndex = (currentPage - 1) * pageSize;
     const endIndex = Math.min(startIndex + pageSize, data.length);
     return data.slice(startIndex, endIndex);
+    window.location.reload();
   }, [currentPage]);
 
   // Callback function to handle page changes
