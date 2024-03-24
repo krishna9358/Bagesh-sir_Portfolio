@@ -30,7 +30,7 @@ const Cell = ({ data }) => (
       <center>
         <a href={data.linkedin} target="_blank" rel="noreferrer">
           <img
-            src={data.linkedinImg}
+            src="https://imgs.search.brave.com/fQPr1e-Xdvt8sGDU2azrU80WfA8mqPqdzDaBsTf19ck/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/Ny5wbmc"
             style={{
               width: '1.25rem',
               height: '1.25rem',
@@ -41,7 +41,7 @@ const Cell = ({ data }) => (
           />
         </a>
         <a href={data.github} target="_blank" rel="noreferrer">
-          <img src={data.githubImg} style={{ width: '1.25rem', height: '1.25rem' }} alt="GitHub" />
+          <img src="https://imgs.search.brave.com/LUckTVtnBmHLsv6OcyA_UsC-qZchQgYysxns3UjMp1s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4x/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvaW9uaWNvbnMt/ZmlsbC12b2wtMi81/MTIvbG9nby1naXRo/dWItMTI4LnBuZw" style={{ width: '1.25rem', height: '1.25rem' }} alt="GitHub" />
         </a>
       </center>
     </article>
