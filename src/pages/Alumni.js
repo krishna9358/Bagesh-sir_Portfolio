@@ -3,21 +3,23 @@ import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
 
-import Cell from '../components/Team/Cell';
-import data from '../data/team';
+import Cell from '../components/alumni/Cell';
+import data from '../data/alumni';
+import '../static/css/pages/alumni.scss'
+
 
 const Alumni = () => (
     <Main
-    title="Team"
-    description="A glance at the team who work with Prof. Dr. Bagesh Kumar"
+    title="Alumni"
+    description="A glance at the Alumni who work with Prof. Dr. Bagesh Kumar"
   >
-    <article className="post" id="Team">
+    <article className="post" id="Alumni">
       <header>
         <div className="title">
-          <h2><Link to="/team">Meet the Team</Link></h2>
+          <h2><Link to="/alumni">Meet the Alumni</Link></h2>
         </div>
       </header>
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div className='alumni-container'>
         {data.map((photo) => (
           <Cell
             data={photo}

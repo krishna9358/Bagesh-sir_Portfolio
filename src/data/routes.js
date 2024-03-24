@@ -29,13 +29,14 @@ const routes = [
     path: '/team',
   },
   {
-    label: 'Contact',
-    path: '/contact',
+    label: 'Alumni',
+    path: '/alumni',
   },
   {
-    label: 'ALumni',
-    path: '/alumni',
+    label: 'Contact',
+    path: '/contact',
   }
+  
 ];
 
 export default routes;
