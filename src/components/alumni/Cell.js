@@ -27,7 +27,7 @@ const Cell = ({ data }) => {
         </header>
         <h3 style={nameStyle}> 
        {name}  
-       <a href={linkedin} style={{justifyItems:'start',width:'100%'}} target="_blank" rel="noreferrer">
+       <a href={linkedin} style={{justifyItems:'center',width:'100%'}} target="_blank" rel="noreferrer">
             <img
               src={linkedinImg}
               style={{ width: '1.25rem', height: '1.25rem',  }}
