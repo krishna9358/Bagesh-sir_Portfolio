@@ -9,30 +9,12 @@ const data = [
     link: '/images/gallery/1.jpeg',
     caption: 'Research paper presentation at <strong>IIT BHU Varanasi India</strong> with <strong>Manipal University</strong> and <strong>IIIT students Allahabad</strong>',
   },
-  // {
-  //   link: '/images/gallery/2.jpeg',
-  //   caption: 'Meeting with <strong>Aseem shrey(Founder SecureMyOrg.com) at Manipal University<strong>',
-  // },
-  // {
-  //   link: '/images/gallery/3.jpeg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/4.jpeg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/5.jpeg',
-  //   caption: 'This is the caption',
-  // },
+ 
   {
     link: '/images/gallery/6.jpeg',
     caption: 'Discussion with Professor <strong>OP Vyas</strong> and <strong>PhD scholars</strong> at <strong>IIIT Allahabad</strong> on trending topics in <strong>process mining</strong>',
   },
-  // {
-  //   link: '/images/gallery/10.jpeg',
-  //   caption: 'This is the caption',
-  // },
+ 
   {
     link: '/images/gallery/8.jpeg',
     caption: 'Visit to <strong>IIT kanpur</strong> on discussion about <strong>future collaborations and research projects.</strong>',
@@ -49,80 +31,7 @@ const data = [
     link: '/images/gallery/7.jpeg',
     caption: 'Visit to <strong>IIT kanpur</strong> on discussion about <strong>future collaborations and research projects.</strong>',
   },
-  // {
-  //   link: '/images/gallery/9.jpeg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/12.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/13.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/14.jpg',
-  //   caption: 'This is the caption',
-  // },
-
-  // {
-  //   link: '/images/gallery/15.jpg',
-  //   caption: 'This is the caption',
-  // },
-
-  // {
-  //   link: '/images/gallery/16.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/17.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/18.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/19.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/20.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/21.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/22.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/23.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/24.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/25.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/26.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/27.jpg',
-  //   caption: 'This is the caption',
-  // },
-  // {
-  //   link: '/images/gallery/28.jpg',
-  //   caption: 'This is the caption',
-  // },
+  
   {
     link: '/images/gallery/29.jpg',
     caption: 'Industrial Visit at <strong>Google Bangalore</strong with <strong>IIIT Allahabad </strong Juniors Kalyan Kumar Dubey and Aayush Chaudhry about <strong>academic collaboration, placement opportunities and research projects.</strong',
@@ -143,6 +52,28 @@ const data = [
   {
     link: '/images/gallery/33.jpeg',
     caption: 'Meeting with professor <strong> O.P Vyas  </strong>along with <strong>Manipal University jaipur  </strong>students at <strong>IIIT Allahabad </strong>',
+  },
+  {
+    link: '/images/gallery/abhinav.png',
+    caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
+  },
+  {
+    link: '/images/gallery/aditya.png',
+    caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
+  },
+  {
+    link: '/images/gallery/aseem.png',
+    caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
+  },  {
+    link: '/images/gallery/kalyan.png',
+    caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
+  },  {
+    link: '/images/gallery/Luv.png',
+    caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
+  },
+  {
+    link: '/images/gallery/vaibhav.png',
+    caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
   },
   {
     link: '/images/gallery/34.jpeg',
@@ -212,10 +143,7 @@ const data = [
     link: '/images/gallery/50.jpeg',
     caption: 'Research paper presentation at <strong> IIT Roorkee</strong> with <strong> Manipal University students</strong> and <strong>IIIT Allahabad students</strong>',
   },
-  // {
-  //   link: '/images/gallery/41.jpg',
-  //   caption: "Discussing upcoming research project with <strong>Bihar's IT Minister(Santosh Kumar Suman)</strong>, focusing on IT infrastructure development and advancement in the state.",
-  // },
+
 
 ];
 
