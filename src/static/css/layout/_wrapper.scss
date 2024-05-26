@@ -15,6 +15,7 @@
 		opacity: 1;
 		padding: (_size(section-spacing) * 1.5);
 		width: 90em;
+		background: _palette(bglightBrown);
 
 		body.is-menu-visible & {
 			opacity: 0.15;

@@ -10,6 +10,13 @@
 		margin-right: _size(section-spacing);
 		min-width: 22em;
 		width: 22em;
+		height: fit-content;
+		background-color: _palette(bg);
+		background-color: _palette(bg-black);
+		color: _palette(text-white);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
 		> * {
 			border-top: solid 1px _palette(border);

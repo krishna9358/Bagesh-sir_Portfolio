@@ -1,18 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Cell = ({ data }) => (
-  <div className="cell-container" style={{ margin: '0.78125rem',
-  width:'fit-content' }}>
-    <article className="mini-post" style={{ width: 'fit-content' }}>
+const Cell = ({ data, backgroundColor }) => (
+  <div className="cell-container" style={{ margin: '0.78125rem', width: 'fit-content',border:'0'}}>
+    <article className="mini-post" style={{ width: 'fit-content',backgroundColor: backgroundColor, borderRadius: '20%' ,}}>
       <header style={{
         maxWidth: '15.625rem',
         maxHeight: '15.625rem',
         overflow: 'hidden',
         display: 'flex',
         padding: '0.625rem',
-      }}
-      >
+      }}>
         <img
           src={data.link}
           alt={data.name}
@@ -20,7 +18,7 @@ const Cell = ({ data }) => (
             width: '14.375rem',
             height: '14.375rem',
             borderRadius: '100%',
-            border: '0.3125rem solid grey',
+            border: '0.3125rem solid black',
             padding: '0.3125rem',
           }}
         />
@@ -36,6 +34,7 @@ const Cell = ({ data }) => (
               height: '1.25rem',
               marginRight: '0.625rem',
               marginTop: '1.25rem',
+              
             }}
             alt="LinkedIn"
           />
@@ -58,6 +57,7 @@ Cell.propTypes = {
     github: PropTypes.string.isRequired,
     githubImg: PropTypes.string.isRequired,
   }).isRequired,
+  backgroundColor: PropTypes.string.isRequired,
 };
 
 export default Cell;
