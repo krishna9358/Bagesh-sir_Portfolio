@@ -13,8 +13,8 @@ import courses from '../data/resume/courses';
 import degrees from '../data/resume/degrees';
 import work from '../data/resume/work';
 import references from '../data/resume/references';
+import colors from '../data/colors';
 
-const colors = ['#44bba4', '#ffffff','#b89e97'];
 
 // NOTE: sections are displayed in order defined.
 const sections = {

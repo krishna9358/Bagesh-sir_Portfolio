@@ -5,8 +5,7 @@ import Main from '../layouts/Main';
 
 import Cell from '../components/Research/Cell';
 import { published, review } from '../data/research';
-
-const colors = ['#44BBA4','#ffffff','#B89E97',]
+import colors from '../data/colors';
 
 const Research = () => (
   <Main

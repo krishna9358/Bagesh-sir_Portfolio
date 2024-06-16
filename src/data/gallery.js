@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 const data = [
+ 
 
   {
     link:'/images/gallery/52.jpeg',
@@ -54,7 +55,11 @@ const data = [
     caption: 'Meeting with professor <strong> O.P Vyas  </strong>along with <strong>Manipal University jaipur  </strong>students at <strong>IIIT Allahabad </strong>',
   },
   {
-    link: '/images/gallery/abhinav.png',
+    link: '/images/gallery/sanchit.png',
+    caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
+  },
+  {
+    link: '/images/gallery/abhinav.png', 
     caption:"Empowering Minds:<strong> Industry Leaders </strong>Inspire at <strong>Manipal University Jaipur's Expert Talk Series</strong> in Computer Science and Technology",
   },
   {

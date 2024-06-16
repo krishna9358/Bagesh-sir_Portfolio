@@ -9,11 +9,12 @@ import data from '../data/gallery';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../static/css/pages/gallery.scss';
-import useVisibility from '../components/Gallery/useVisibility'; // Import the custom hook
+import useVisibility from '../components/Gallery/useVisibility'; 
+import colors from '../data/colors';
+
 
 const PAGE_SIZE = 6; // Number of carousels per page
 
-const colors = ['#f0f8ff', '#faebd7', '#e6e6fa']; // Define your colors here
 
 const Gallery = () => {
   const [currentPage, setCurrentPage] = useState(1);

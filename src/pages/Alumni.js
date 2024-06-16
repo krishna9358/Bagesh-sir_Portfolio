@@ -5,8 +5,8 @@ import Main from '../layouts/Main';
 import Cell from '../components/alumni/Cell';
 import data from '../data/alumni';
 import '../static/css/pages/alumni.scss';
+import colors from '../data/colors';
 
-const colors = ['#f0f8ff', '#faebd7', '#e6e6fa']; // Define your colors here
 
 const Alumni = () => (
   <Main

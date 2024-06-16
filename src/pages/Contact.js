@@ -23,7 +23,9 @@ const Contact = () => (
             {
               display: 'flex',
               justifyContent: 'space-between',
-              padding: '0px',
+              padding: '1rem',
+              backgroundColor: 'white',
+              margin:'1rem',
             }
           }
           data-aos="fade-in"
