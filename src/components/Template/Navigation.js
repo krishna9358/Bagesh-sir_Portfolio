@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import routes from '../../data/routes';
-import Hamburger from './Hamburger';
-import '../../static/css/components/navigation.scss'
 
+import Hamburger from './Hamburger';
+import routes from '../../data/routes';
+
+// Websites Navbar, displays routes defined in 'src/data/routes'
 const Navigation = () => (
   <header id="header">
     <h1 className="index-link">
@@ -14,17 +15,8 @@ const Navigation = () => (
     <nav className="links">
       <ul>
         {routes.filter((l) => !l.index).map((l) => (
-          <li key={l.label} className={l.sublinks ? 'has-submenu' : ''}>
+          <li key={l.label}>
             <Link to={l.path}>{l.label}</Link>
-            {l.sublinks && (
-              <ul className="submenu">
-                {l.sublinks.map((sublink) => (
-                  <li key={sublink.label}>
-                    <Link to={sublink.path}>{sublink.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            )}
           </li>
         ))}
       </ul>

@@ -1,58 +1,41 @@
+// Not found page
+
 .bm-item-list {
   margin-top: 0;
 }
 
 .menu-hover {
-  padding: 0 1em;
+ padding: 0 1em;
 }
 
 .menu-hover:hover {
   opacity: 0.5;
 }
 
+
 .hamburger-ul {
   display: block;
-}
 
-.hamburger-ul li {
-  display: block !important;
-}
+  li a h3 {
+    border: 0;
+    border-top: dotted 1px rgba(160, 160, 160, 0.3);
+    margin: 1.5em 0 0 0;
+    padding: 1.5em 0 0 0;
+  }
 
-.hamburger-ul li a h3,
-.hamburger-ul .submenu-toggle h3 {
-  border: 0;
-  border-top: dotted 1px rgba(160, 160, 160, 0.3);
-  margin: 1.5em 0 0 0;
-  padding: 1.5em 0 0 0;
-}
+  li a h3:hover {
+    color: _palette(accent);
+  }
 
-.hamburger-ul li a h3:hover,
-.hamburger-ul .submenu-toggle h3:hover {
-  color: #007acc; /* Example accent color */
-}
+  li {
+    display: block !important;
+  }
 
-.hamburger-ul h3 {
-  font-size: 0.7em;
-}
+  h3 {
+    font-size: 0.7em;
+  }
 
-.hamburger-ul .index-li {
-  border-top: none;
-}
-
-/* Style for the submenu */
-.hamburger-ul .submenu {
-  padding-left: 1em; /* Indent submenus */
-}
-
-.hamburger-ul .submenu li {
-  margin-top: 0.5em;
-}
-
-.hamburger-ul .submenu li a h3 {
-  font-size: 0.6em;
-  padding: 0.5em 0;
-}
-
-.submenu-toggle {
-  cursor: pointer;
+  .index-li {
+    border-top: none;
+  }
 }
