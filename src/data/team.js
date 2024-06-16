@@ -53,7 +53,7 @@ const data = [
 
   },
   {
-    link: '/images/team/am.jpeg',
+    link: '/images/team/As.jpeg',
     name: 'Amritansh Mishra',
     education: 'Student B.Tech',
     linkedin: 'https://www.linkedin.com/in/amritansh-mishra-041a751a5/',
@@ -62,7 +62,7 @@ const data = [
 
   },
   {
-    link: '/images/team/am.jpeg',
+    link: '/images/team/vs.jpeg',
     name: 'Vaidik',
     education: 'Student B.Tech',
     linkedin: '',
@@ -124,7 +124,7 @@ const data = [
 
   },
   {
-    link: '/images/team/a.jpeg',
+    link: '/images/team/ar.jpeg',
     name: 'Aryan',
     education: 'Student B.Tech',
     linkedin: 'linkedin.com',

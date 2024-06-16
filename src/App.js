@@ -17,6 +17,7 @@ const Research = lazy(() => import('./pages/Research'));
 const Projects = lazy(() => import('./pages/Projects'));
 const Resume = lazy(() => import('./pages/Resume'));
 const Alumni = lazy(() => import('./pages/Alumni'));
+const GexpertTalk = lazy(() => import('./pages/GexpertTalk'));
 // const Stats = lazy(() => import('./pages/Stats'));
 
 const App = () => (
@@ -27,8 +28,8 @@ const App = () => (
         <Route path="/" element={<About />} />
         <Route path="/research" element={<Research />} />
         <Route path="/projects" element={<Projects />} />
-        {/* <Route path="/stats" element={<Stats />} /> */}
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/GexpertTalk" element={<GexpertTalk />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/resume" element={<Resume />} />

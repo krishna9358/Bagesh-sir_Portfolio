@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import Main from '../layouts/Main';
 import Cell from '../components/Team/Cell';
 import data from '../data/team';
+import colors from '../data/colors';
 import '../static/css/pages/team.scss';
 
 // Define an array of colors to cycle through
-const colors = ['#44BBA4','#ffffff','#B89E97',]
 
 const Team = () => (
   <Main

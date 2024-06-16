@@ -19,6 +19,11 @@ const routes = [
   {
     label: 'Events',
     path: '/gallery',
+
+  },
+  {
+    label: 'Expert Talks',
+    path: '/GexpertTalk',
   },
   {
     label: 'Team',
@@ -32,15 +37,7 @@ const routes = [
     label: 'Contact',
     path: '/contact',
   },
-  {
-    label: 'T&P',
-    path: '#',
-    sublinks: [
-      { label: 'College 1', path: '/college1' },
-      { label: 'College 2', path: '/college2' },
-      { label: 'College 3', path: '/college3' },
-    ],
-  },
+  
 ];
 
 export default routes;

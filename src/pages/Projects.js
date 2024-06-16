@@ -5,8 +5,8 @@ import Main from '../layouts/Main';
 
 import Cell from '../components/Projects/Cell';
 import data from '../data/projects';
+import colors from '../data/colors';
 
-const colors = ['#44BBA4','#ffffff','#B89E97',]
 
 const Projects = () => (
   <Main
