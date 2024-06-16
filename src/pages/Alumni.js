@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import Main from '../layouts/Main';
 
 import Cell from '../components/alumni/Cell';
 import data from '../data/alumni';
-import '../static/css/pages/alumni.scss'
+import '../static/css/pages/alumni.scss';
 
+const colors = ['#f0f8ff', '#faebd7', '#e6e6fa']; // Define your colors here
 
 const Alumni = () => (
-    <Main
+  <Main
     title="Alumni"
     description="A glance at the Alumni who work with Prof. Dr. Bagesh Kumar"
   >
@@ -20,13 +20,16 @@ const Alumni = () => (
         </div>
       </header>
       <div className='alumni-container'>
-        {data.map((photo) => (
-          <Cell
-            data={photo}
-            key={photo.cap}
-
-          />
-        ))}
+        {data.map((photo, index) => {
+          const bgColor = colors[index % colors.length];
+          return (
+            <Cell
+              data={photo}
+              key={photo.cap}
+              bgColor={bgColor}
+            />
+          );
+        })}
       </div>
     </article>
   </Main>

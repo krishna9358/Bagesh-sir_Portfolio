@@ -14,6 +14,8 @@ import degrees from '../data/resume/degrees';
 import work from '../data/resume/work';
 import references from '../data/resume/references';
 
+const colors = ['#44bba4', '#ffffff','#b89e97'];
+
 // NOTE: sections are displayed in order defined.
 const sections = {
   Education: () => <Education data={degrees} />,
@@ -24,10 +26,10 @@ const sections = {
 };
 
 const Resume = () => (
-  <Main
+  <Main 
     title="Resume"
     description="Bagesh Kumar's Resume. IIIT Allahabad, M.Tech, B.Tech, Ph.D., B.Tech, Professor, Manipal University, Jaipur"
-  >
+  > 
     <article className="post" id="resume">
       <header>
         <div className="title">
@@ -40,8 +42,10 @@ const Resume = () => (
           </div>
         </div>
       </header>
-      {Object.entries(sections).map(([name, Section]) => (
-        <Section key={name} />
+      {Object.entries(sections).map(([name, Section], index) => (
+        <div key={name} id={name.toLowerCase()} style={{ backgroundColor: colors[index % colors.length], padding: '10px', margin: '10px 0' }}>
+          <Section />
+        </div>
       ))}
     </article>
   </Main>

@@ -1,14 +1,75 @@
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-  
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-  /* Media query for mobile phones */
-  @media (max-width: 768px) {
-    .gallery-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
-  }
-  
+.carousel-wrapper {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev, .slick-next {
+  display: block !important; /* Show arrows */
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  color: white; 
+  font-size: 1rem;
+  z-index: 1; /* Ensure arrows are above other elements */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 0, 0); /* Change color on hover */
+}
+
+.slick-prev {
+  left: 2em; /* Adjust position */
+}
+
+.slick-next {
+  right: 2em; /* Adjust position */
+}
+
+/* Ensure each cell-container has the same height */
+.cell-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border: none;
+}
+
+.mini-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.caption {
+  padding: 10px;
+  text-align: justify;
+}
+
+.caption.expanded {
+  max-height: none;
+}
+
+.caption:not(.expanded) {
+  max-height: 100px; /* Adjust this value to your needs */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}

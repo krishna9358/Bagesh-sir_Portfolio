@@ -6,6 +6,8 @@ import Main from '../layouts/Main';
 import Cell from '../components/Research/Cell';
 import { published, review } from '../data/research';
 
+const colors = ['#44BBA4','#ffffff','#B89E97',]
+
 const Research = () => (
   <Main
     title="Research Publications"
@@ -18,19 +20,21 @@ const Research = () => (
         </div>
       </header>
       <h1>Journal Articles</h1>
-      {published.map((project) => (
-        <Cell
-          data={project}
-          key={project.title}
-        />
+      {published.map((project, index) => (
+        <div key={project.title} style={{ backgroundColor: colors[index % colors.length], padding: '10px', margin: '10px 0' }}>
+          <Cell
+            data={project}
+          />
+        </div>
       ))}
       <br />
       <h1>Conferences, Manuscript Under Review</h1>
-      {review.map((project) => (
-        <Cell
-          data={project}
-          key={project.title}
-        />
+      {review.map((project, index) => (
+        <div key={project.title} style={{ backgroundColor: colors[index % colors.length], padding: '10px', margin: '10px 0' }}>
+          <Cell
+            data={project}
+          />
+        </div>
       ))}
     </article>
   </Main>
