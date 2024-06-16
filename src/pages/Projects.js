@@ -6,6 +6,8 @@ import Main from '../layouts/Main';
 import Cell from '../components/Projects/Cell';
 import data from '../data/projects';
 
+const colors = ['#44BBA4','#ffffff','#B89E97',]
+
 const Projects = () => (
   <Main
     title="Projects"
@@ -17,10 +19,11 @@ const Projects = () => (
           <h2><Link to="/projects">Projects</Link></h2>
         </div>
       </header>
-      {data.map((project) => (
+      {data.map((project, index) => (
         <Cell
           data={project}
           key={project.title}
+          bgColor={colors[index % colors.length]}
         />
       ))}
     </article>

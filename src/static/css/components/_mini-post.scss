@@ -13,11 +13,6 @@
   // border: 1px solid red;
 
   .description {
-    // position: absolute;/
-    padding: 0;
-    bottom: 0;
-    border-top: solid 1px _palette(border);
-    
 
     p {
       font-size: 0.9rem;
@@ -29,6 +24,7 @@
       z-index: 1000;
       transition: all 0.1s;
       -webkit-transition: all 0.1s ease-in-out;
+     
     }
 
     p:hover {
@@ -48,11 +44,12 @@
 .mini-post {
   @include vendor( 'display', 'flex');
   @include vendor( 'flex-direction', 'column');
-  background: _palette(bg);
-  // border: solid 1px _palette(border);
+  // background: _palette(bg);
+  border: solid 1px _palette(border);
   margin: 0 0 _size(element-margin);
   display: flex;
   flex-direction: column;
+  
 
 
   .image {
@@ -108,16 +105,25 @@
     background-size: cover; 
     background-position: center;
   }
-  .caption{
+  .caption {
     font-size: 1rem;
     text-align: center;
-    align-items: center;
     margin: 10px;
     justify-content: center;
     overflow: hidden;
-  text-overflow: ellipsis;
-  
+    text-overflow: ellipsis;
+    height: 6rem;
+    transition: height 0.3s ease;
+    position: relative;
+    cursor: pointer;
   }
+  
+  
+  
+  .caption.expanded {
+    height: auto;
+  }
+  
 }
 
 .mini-posts {

@@ -9,23 +9,14 @@ import data from '../data/gallery';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../static/css/pages/gallery.scss';
+import useVisibility from '../components/Gallery/useVisibility'; // Import the custom hook
 
 const PAGE_SIZE = 6; // Number of carousels per page
 
+const colors = ['#f0f8ff', '#faebd7', '#e6e6fa']; // Define your colors here
+
 const Gallery = () => {
   const [currentPage, setCurrentPage] = useState(1);
-
-  const settings = {
-    dots: true, // Enable dots
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true, // Enable auto animation
-    autoplaySpeed: 3000, // Set the speed of auto animation in milliseconds
-    nextArrow: null, // Remove next arrow
-    prevArrow: null // Remove prev arrow
-  };
 
   // Function to create a chunked array
   const chunkArray = (array, chunkSize) => {
@@ -60,17 +51,33 @@ const Gallery = () => {
           </div>
         </header>
         <div className='grid-container'>
-          {currentData.map((chunk, index) => (
-            <div className='carousel-wrapper' key={index}>
-              <Slider {...settings}>
-                {chunk.map((photo) => (
-                  <div key={photo.cap}>
-                    <Cell data={photo} />
-                  </div>
-                ))}
-              </Slider>
-            </div>
-          ))}
+          {currentData.map((chunk, index) => {
+            const bgColor = colors[index % colors.length];
+            const [isVisible, ref] = useVisibility(); // Use the custom hook
+            const settings = {
+              dots: false,
+              infinite: true,
+              speed: 1500,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              autoplay: isVisible, // Enable auto-play based on visibility
+              autoplaySpeed: 3000,
+              nextArrow: <div className="slick-arrow slick-next" />,
+              prevArrow: <div className="slick-arrow slick-prev" />,
+            };
+
+            return (
+              <div className='carousel-wrapper' key={index} ref={ref}>
+                <Slider {...settings}>
+                  {chunk.map((photo) => (
+                    <div key={photo.cap}>
+                      <Cell data={photo} bgColor={bgColor} />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            );
+          })}
         </div>
         <Pagination
           currentPage={currentPage}

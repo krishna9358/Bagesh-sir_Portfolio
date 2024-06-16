@@ -1,0 +1,46 @@
+/* Style for the submenu */
+.links .has-submenu {
+    position: relative;
+  }
+  
+  .links .submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .links .submenu li {
+    white-space: nowrap;
+  }
+  
+  .links .submenu li a {
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .links .submenu li a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show submenu on hover */
+  .links .has-submenu:hover .submenu {
+    display: block;
+    z-index: 2000; /* Ensure it is on top of other components */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .links .has-submenu .submenu {
+      position: static;
+      box-shadow: none;
+      z-index: auto; /* Reset z-index for static positioning */
+    }
+  }
+  
