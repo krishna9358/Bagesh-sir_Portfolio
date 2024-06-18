@@ -1,5 +1,54 @@
-// TODO Add a couple lines about each project
+// TODO Add a couple lines about each projec
 const published = [
+  {
+    title: 'Medical Dataset Preparation and Privacy Preservation for Improving the healthcare facilities using Federated Learning Approach',
+    subtitle: 'Presented at IIT Roorkee, India',
+    link:'/assets/research/pdf1.pdf'
+   
+  },
+  {
+    title: 'MedAI AnomalyPro: Advancing Unsupervised Anomaly Detection in Medical Imaging',
+    subtitle: 'Presented at NIT Kurukshetra, India',
+    link:'/assets/research/pdf2.pdf'
+   
+  },
+  {
+    title: 'Enhanced Heart Disease Classification using Parallelization and integrated Machine-Learning Techniques',
+    subtitle: 'Presented at IIT Jammu, India',
+    link:'/assets/research/pdf3.pdf'
+   
+  },
+  {
+    title: 'Detection and Classification of Diseases in Coffee Plant using CNN-XGBoost composite model',
+    subtitle: 'Presented at IIT Mandi, India',
+    link:'/assets/research/pdf4.pdf'
+   
+  },
+  {
+    title: 'Efficient real-time Sign Detection for Autonomous Vehical in Hazy environment using Deep Learning Models',
+    subtitle: 'Presented at IIT BHU, India',
+    link:'/assets/research/pdf5.pdf'
+   
+  },
+  {
+    title: 'Enhancing Visual Question Answering with Beam Search in Transformer Models',
+    subtitle: 'Presented at NIt Patna, India',
+    link:'/assets/research/pdf6.pdf'
+   
+  },
+  {
+    title: 'Smart Healthcare System: Automated Methods for diagnosis of diseases using Digital Twin Technology',
+    subtitle: '',
+    link:'/assets/research/pdf7.pdf'
+   
+  },
+  {
+    title: 'CLASSIFICATION OF MNIST DATASET USING MATRIX PENCIL WITH DEEP NEURAL NETWORK',
+    subtitle: '',
+    link:'/assets/research/pdf8.pdf'
+   
+  },
+
   {
     title: 'A Classification Using Modified Sequential Minimal Optimization(SMO) for One Class Slab Support Vector (OCSSVM)',
     subtitle: 'Bagesh Kumar, A. S., & Sourin Chakrabarti, O. P. V. (n.d.[a])',
