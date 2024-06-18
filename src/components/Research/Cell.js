@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Cell = ({ data }) => {
-  const handleClick = (event) => {
-    if (data.link) {
-      window.open(data.link, '_blank');
-    }
-  };
+  
 
   return (
     <div className="cell-container">
@@ -18,7 +14,6 @@ const Cell = ({ data }) => {
                 href={data.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={handleClick} // Call handleClick when title is clicked
               >
                 {data.title}
               </a>
