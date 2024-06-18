@@ -18,7 +18,7 @@ const Research = () => (
           <h2><Link to="/research">Research Publications</Link></h2>
         </div>
       </header>
-      <h1>Journal Articles</h1>
+      <h1>Conferences</h1>
       {published.map((project, index) => (
         <div key={project.title} style={{ backgroundColor: colors[index % colors.length], padding: '10px', margin: '10px 0' }}>
           <Cell
@@ -27,7 +27,7 @@ const Research = () => (
         </div>
       ))}
       <br />
-      <h1>Conferences, Manuscript Under Review</h1>
+      <h1>Manuscript Under Review</h1>
       {review.map((project, index) => (
         <div key={project.title} style={{ backgroundColor: colors[index % colors.length], padding: '10px', margin: '10px 0' }}>
           <Cell
