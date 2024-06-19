@@ -18,15 +18,33 @@ const data = [
       education:'PhD,IIIT Allahabad',
     },
     {
-      link: '/images/team/rg.jpg',
+      link: '/images/Alumni/KP.jpeg',
       name: 'Prateek Kumar',
       education: 'B.Tech IIIT Allahabad',
-      linkedin: 'https://www.linkedin.com/in/rishikgupta28/',
+      linkedin: 'https://www.linkedin.com/in/indianprateek/',
       linkedinImg: 'https://imgs.search.brave.com/fQPr1e-Xdvt8sGDU2azrU80WfA8mqPqdzDaBsTf19ck/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/Ny5wbmc',
       work:'Research Scholar at IIIT Allahabad',
       intern:'',
       education:'PhD,IIIT Allahabad',
       
+    },
+    {
+      link: '/images/Alumni/sh.jpeg',
+      name: 'Shivam',
+      linkedin: 'https://www.linkedin.com/in/shivam-abhilash/',
+      linkedinImg: 'https://imgs.search.brave.com/fQPr1e-Xdvt8sGDU2azrU80WfA8mqPqdzDaBsTf19ck/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/Ny5wbmc',
+      work: 'Engineering Lead at ZS',
+      intern:'Associate Software Engineer at Maq Software',
+      education:'Btech. IIIT Allahabad',
+    },
+    {
+      link: '/images/Alumni/kk.jpeg',
+      name: 'Kalyan Kumar Dubey',
+      linkedin: 'https://www.linkedin.com/in/kkdubey20/',
+      linkedinImg: 'https://imgs.search.brave.com/fQPr1e-Xdvt8sGDU2azrU80WfA8mqPqdzDaBsTf19ck/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/Ny5wbmc',
+      work: 'Software Engineer at Google',
+      intern:'Associate Software Engineer at Maq Software',
+      education:'Btech. IIIT Allahabad',
     },
     
   ];
