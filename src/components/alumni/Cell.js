@@ -8,13 +8,7 @@ const Cell = ({ data, bgColor }) => {
     setIsExpanded(!isExpanded);
   };
 
-  const nameStyle = {
-    padding: 0,
-    margin: 0,
-    display: 'grid',
-    gridTemplateColumns: '80% 20%',
-    justifyItems: 'end'
-  };
+
 
   const { link, name, work, intern, education, linkedin, linkedinImg, github, githubImg } = data;
 
@@ -48,16 +42,13 @@ const Cell = ({ data, bgColor }) => {
             }}
           />
         </header>
-        <h3 style={nameStyle}>
-          {name}
+       
           <a href={linkedin} style={{ justifyItems: 'center', width: '100%' }} target="_blank" rel="noreferrer">
-            <img
-              src={linkedinImg}
-              style={{ width: '1.25rem', height: '1.25rem' }}
-              alt="LinkedIn"
-            />
+          <h3 >
+          {name}
+          </h3>
           </a>
-        </h3>
+      
         <center>
           <h5
             style={{ ...truncateText(experience), padding: 0, margin: 0 }}
